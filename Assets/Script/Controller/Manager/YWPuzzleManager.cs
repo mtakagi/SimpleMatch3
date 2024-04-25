@@ -179,7 +179,7 @@ public class YWPuzzleManager : MonoBehaviour
 	public Camera GetMainCamera()
 	{
 		var mainRoot = GameObject.Find ("MainRoot");
-		var cameraObject = mainRoot.transform.FindChild ("Camera");
+		var cameraObject = mainRoot.transform.Find ("Camera");
 		if (cameraObject != null) 
 		{
 			return cameraObject.GetComponent<Camera> ();
